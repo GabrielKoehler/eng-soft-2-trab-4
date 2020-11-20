@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loja</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <%= nav_bar brand: "Loja", brand_link: root_url, style:"height: 8%" do %>
+    <%= menu_group do %>
+      <%= menu_item "Criar novo produto", produtos_new_path %>
+    <% end %>
+    <%= form_tag busca_produto_path, method: :get, class:"navbar_form" do%>
+      <div class="navbar-form navbar-right">
+        <%= text_field_tag :nome, @nome, class:"navbar-search input-sm", style:"border: 1px" %>
+        <%= button_to "Buscar", nil, class:"btn btn-primary btn-sm"%>
+      </div>
+    <% end %>
+  <% end %>
+  <div class="container">
+    <body>
+      <%= yield %>
+    </body>
+  </div>
+</html>
