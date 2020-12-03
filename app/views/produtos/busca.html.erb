@@ -4,7 +4,7 @@
       <td>Nome</td>
       <td>Descrição</td>
       <td>Preço</td>
-      <td>Quantidade</td>
+      <td>Carga Horaria</td>
       <td>Ações</td>
     </tr>
   </thead>
@@ -14,7 +14,7 @@
         <td><%= produto.nome %> </td>
         <td><%= produto.descricao %> </td>
         <td><%= produto.preco %> </td>
-        <td><%= produto.quantidade %> </td>
+        <td><%= produto.carga_horaria %> </td>
         <td><%= button_to "Remover", produto, 
                 method: :delete, 
                 class:"btn-sm btn-danger",

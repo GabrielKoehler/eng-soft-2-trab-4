@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_10_28_050922) do
     t.string "nome"
     t.text "descricao"
     t.decimal "preco"
-    t.integer "quantidade"
+    t.integer "carga_horaria"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

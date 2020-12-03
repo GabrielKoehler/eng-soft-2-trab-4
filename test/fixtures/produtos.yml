@@ -4,10 +4,10 @@ one:
   nome: MyString
   descricao: MyText
   preco: 9.99
-  quantidade: 1
+  carga_horaria: 1
 
 two:
   nome: MyString
   descricao: MyText
   preco: 9.99
-  quantidade: 1
+  carga_horaria: 1

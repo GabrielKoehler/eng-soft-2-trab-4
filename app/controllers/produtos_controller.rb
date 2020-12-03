@@ -6,7 +6,7 @@ class ProdutosController < ApplicationController
   end
 
   def create
-    produto = params.require(:produto).permit(:nome, :descricao, :preco, :quantidade)
+    produto = params.require(:produto).permit(:nome, :descricao, :preco, :carga_horaria)
     Produto.create produto
     redirect_to root_url
   end
